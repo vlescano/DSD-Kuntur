@@ -32,7 +32,7 @@ public class PersonaServiceTest {
 	public void consultarDNI(){
 	Persona	persona = service.consultarPersona("25839646");
 	assertNotNull(persona);	
-	//Demo
+	//El DNI Ingresado es el correcto
 		
 	}
 		
