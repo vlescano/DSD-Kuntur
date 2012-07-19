@@ -44,6 +44,6 @@ public class Alumno {
 	}
 	public void setSeccion(String seccion) {
 		this.seccion = seccion; 
-
+	}
 	
 }
