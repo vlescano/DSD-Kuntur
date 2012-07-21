@@ -8,7 +8,7 @@
 
 <jaxws:client 
 id="personaService" 
-serviceClass="pe.gob.reniec.servicio.PersonaService"
+serviceClass="pe.edu.upc.dsd.service.ws.PersonaService"
 address="http://localhost:8080/ws-reniec/PersonaService">
  </jaxws:client>
 

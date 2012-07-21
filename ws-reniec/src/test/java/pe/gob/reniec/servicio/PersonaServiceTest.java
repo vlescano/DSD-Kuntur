@@ -7,8 +7,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 
-import pe.gob.reniec.modelo.Persona;
-import pe.gob.reniec.servicio.PersonaService;
+import pe.edu.upc.dsd.service.ws.PersonaService;
+import pe.edu.upc.dsd.ws.bean.Persona;
 
 
 
