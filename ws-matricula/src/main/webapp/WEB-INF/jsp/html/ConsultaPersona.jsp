@@ -42,12 +42,14 @@
 </td>
 </table>
 <table>
+ <tr><td>Datos Reniec</td></tr>
  <tr>
-                    <th class="Estilo27" scope="row">${model.persona.dni}</th>
-                    <td class="Estilo27">${model.persona.nombres}</td>
-                    <td class="Estilo27">${model.persona.apellidoPaterno}</td>
-                    <td class="Estilo27">${model.persona.apellidoMaterno}</td>
-                  </tr>                  	
+                   	<td>DNI</td>	 <th>${model.persona.dni}</th>  </tr>    
+                    <tr><td>Nombres</td>	 <td >${model.persona.nombres}</td>    </tr>  
+                    <tr><td>Apellido Paterno</td>	<td >${model.persona.apellidoPaterno}</td>    </tr>  
+                    <tr> <td>Apellido Materno</td><td >${model.persona.apellidoMaterno}</td>    </tr>  
+                    <tr> <td>Fecha de Nacimiento</td><td >${model.persona.fechaNacimiento}</td>    </tr>  
+                              	
  </table>
 
 
