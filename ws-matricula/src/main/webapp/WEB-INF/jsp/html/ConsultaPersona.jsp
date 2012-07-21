@@ -35,13 +35,12 @@
 
 <input type="hidden" name="accion" value=""/>
 <table>
-<tr><td>Ingresar DNI</td><td><input type="text" name="txtDNI" /></td></tr>
-<tr><td colspan="2"><input type="submit" name="btnConsultar" value="Validar DNI" onclick="javascript:buscar();"  /></td>
+<tr><td>Ingresar DNI</td><td><input type="text" name="txtDNI" /></td><td><input type="submit" name="btnConsultar" value="Validar DNI" onclick="javascript:buscar();"  /></td></tr>
 <td>
-<a href="<%=request.getContextPath() %>/buscarPersona.do"><span class="">Consulta DNI</span></a>
+<!-- <a href="<%=request.getContextPath() %>/buscarPersona.do"><span class="">Consulta DNI</span></a> -->
 </td>
 </table>
-<table>
+<table border="1">
  <tr><td>Datos Reniec</td></tr>
  <tr>
                    	<td>DNI</td>	 <th>${model.persona.dni}</th>  </tr>    
