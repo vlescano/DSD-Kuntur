@@ -45,7 +45,7 @@ public class PersonaServiceImpl implements PersonaService {
 
 
 	//@Override
-	public Persona consultarPersona(String dni) {
+	public Persona obtenerPersonaDNI(String dni) {
 
 		
 		for (Persona persona : personas) 

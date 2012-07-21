@@ -30,7 +30,7 @@ public class PersonaServiceTest {
 	@Test
 
 	public void consultarDNI(){
-	Persona	persona = service.consultarPersona("25839646");
+	Persona	persona = service.obtenerPersonaDNI("25839646");
 	assertNotNull(persona);	
 	//El DNI Ingresado es el correcto
 		

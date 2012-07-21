@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd"> 
+  
+  <bean name="/buscarPersona.do" class="pe.edu.upc.dsd.controller.BusquedaPersonaController" >
+    <property name="service" ref="service" />
+  </bean>
+
+
+  
+  <!--  
+  
+  
+  <bean name="/buscarCliente.do" class="pe.edu.upc.dsd.controller.BusquedaClienteController" >
+    <property name="service" ref="service" />
+  </bean>
+  
+  <bean name="/buscarProducto.do" class="pe.edu.upc.dsd.controller.BusquedaProductoController" >
+    <property name="service" ref="service" />
+  </bean>
+  
+  <bean name="/buscarDocumentos.do" class="pe.edu.upc.dsd.controller.BusquedaDocumentosController" >
+    <property name="service" ref="service" />
+  </bean>
+
+  <bean name="/registrarPedido.do" class="pe.edu.upc.dsd.controller.RegistroPedidoController" >
+    <property name="service" ref="service" />
+  </bean>
+
+  <bean name="/buscarStock.do" class="pe.edu.upc.dsd.controller.BusquedaStockController" >
+    <property name="service" ref="service" />
+  </bean>
+  -->
+  
+</beans>

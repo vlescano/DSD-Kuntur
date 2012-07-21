@@ -82,7 +82,7 @@
   </dependencies>
 
   <build>
-    <finalName>sistema-ventas</finalName>
+    <finalName>ws-matricula</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
