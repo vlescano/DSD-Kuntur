@@ -14,7 +14,7 @@
   <jaxws:client id="personaService" 
           serviceName="PersonaServiceImpl"
           serviceClass="pe.edu.upc.dsd.service.ws.PersonaService"
-          address="http://localhost:8080/ws-reniec/PersonaService"/>
+          address="http://localhost:8081/ws-reniec/PersonaService"/>
           
  <bean id="service" class="pe.edu.upc.dsd.service.impl.ServiceImpl" >
     <property name="personaService" ref="personaService" />
