@@ -84,8 +84,11 @@
 <tr><td style="border-bottom: 1px solid #D2ae7b;" width="60%">Apellido Materno</td><td style="border-bottom: 1px solid #D2ae7b;border-left: 1px solid #D2ae7b;">${model.persona.apellidoMaterno}</td></tr>  
 <tr><td style="border-bottom: 1px solid #D2ae7b;" width="60%">Fecha de Nacimiento</td><td style="border-bottom: 1px solid #D2ae7b;border-left: 1px solid #D2ae7b;">${model.persona.fechaNacimiento}</td></tr>  
 </table>
+<br></br>
 
-
+<c:if test="${model.persona.dni}==null">
+ <c:out value="El documento ingresado no existe<br /><br />" escapeXml="false" />
+</c:if>
 
 <br></br>
 
