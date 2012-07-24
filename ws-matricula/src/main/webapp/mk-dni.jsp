@@ -23,6 +23,11 @@
 	
 </script>
 
+
+
+
+
+
 </head>
 
 <body bgcolor= "#FFFFFF">
@@ -66,33 +71,28 @@
 
 
 <table>
-<tr><td>Ingresar DNI</td><td><input type="text" name="txtDNI" /></td><td><input type="submit" name="btnConsultar" value="Validar DNI" onclick="javascript:buscar();"  /></td></tr>
-<td>
-<!-- <a href="<%=request.getContextPath() %>/buscarPersona.do"><span class="">Consulta DNI</span></a> -->
-</td>
+<tr><td>Ingresar DNI</td><td><input type="text" name="txtDNI" value="${model.persona.dni}" /></td><td><input type="submit" name="btnConsultar" value="Consultar DNI" onclick="javascript:buscar();"  /></td></tr>
 </table>
 <br>
-<table border="1">
- <tr><td>Datos Reniec</td></tr>
- <tr>
-                   	<td>DNI</td>	 <th>${model.persona.dni}</th>  </tr>    
-                    <tr><td>Nombres</td>	 <td >${model.persona.nombres}</td>    </tr>  
-                    <tr><td>Apellido Paterno</td>	<td >${model.persona.apellidoPaterno}</td>    </tr>  
-                    <tr> <td>Apellido Materno</td><td >${model.persona.apellidoMaterno}</td>    </tr>  
-                    <tr> <td>Fecha de Nacimiento</td><td >${model.persona.fechaNacimiento}</td>    </tr>  
-                              	
- </table>
+
+
+<table  width="400" cellspacing="0" cellpadding="0" align="center" style="border-right: 1px solid #D2ae7b; border-LEFT: 1px solid #D2ae7b; border-TOP: 1px solid #D2ae7b;font-family:Verdana;font-size:small;">
+<tr><td colspan=2 align="center" style="border-bottom: 1px solid #D2ae7b;"><b>Datos Reniec</b></td></tr>
+<tr><td style="border-bottom: 1px solid #D2ae7b;" width="60%">DNI</td><td style="border-bottom: 1px solid #D2ae7b;border-left: 1px solid #D2ae7b;">${model.persona.dni}</td></tr>    
+<tr><td style="border-bottom: 1px solid #D2ae7b;" width="60%">Nombres</td><td style="border-bottom: 1px solid #D2ae7b;border-left: 1px solid #D2ae7b;">${model.persona.nombres}</td></tr>  
+<tr><td style="border-bottom: 1px solid #D2ae7b;" width="60%">Apellido Paterno</td><td style="border-bottom: 1px solid #D2ae7b;border-left: 1px solid #D2ae7b;">${model.persona.apellidoPaterno}</td></tr>  
+<tr><td style="border-bottom: 1px solid #D2ae7b;" width="60%">Apellido Materno</td><td style="border-bottom: 1px solid #D2ae7b;border-left: 1px solid #D2ae7b;">${model.persona.apellidoMaterno}</td></tr>  
+<tr><td style="border-bottom: 1px solid #D2ae7b;" width="60%">Fecha de Nacimiento</td><td style="border-bottom: 1px solid #D2ae7b;border-left: 1px solid #D2ae7b;">${model.persona.fechaNacimiento}</td></tr>  
+</table>
+
+
+
+<br></br>
 
 <table border="1" WIDTH=35% height=5% align="center" > 
-		
-		<tr>	<th align="center"><td><small><font face="verdana"><form><input type="submit" value="Aceptar"></form></font></small></td></th>
-			<th align="left"><small><font face="verdana">El tipo y número de documento es correcto</font></small></th>
+		<tr><td><input type="submit" value="Grabar DNI"></td>
+		<td><font face="verdana"><small>Si el número del documento ingresado es correcto presione "Grabar DNI" para continuar</small></font></td>
 		</tr>
-		
-		<tr>	<th align="center"><td><small><font face="verdana"><form><input type="submit" value="Cambiar"></form></font></small></td></th>
-			<th align="left"><small><font face="verdana">Grabar el tipo y número de documento ingresado</font></small></th>
-		</tr>
-
 </table>
 	
 
