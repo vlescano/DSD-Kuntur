@@ -25,7 +25,7 @@ public class BusquedaPersonaController extends AbstractController
 {
 	private static final Logger logger = Logger.getLogger(BusquedaPersonaController.class);
 	
-	private static final String VISTA_BUSQUEDA_PRODUCTOS = "ConsultaPersona";
+	private static final String VISTA_BUSQUEDA_PRODUCTOS = "mk-dni";
 	private static final String PARAMETRO_ACCION = "accion";
 	private static final String PARAMETRO_CODIGO = "txtDNI";
 	

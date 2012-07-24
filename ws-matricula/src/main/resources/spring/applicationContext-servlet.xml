@@ -8,7 +8,9 @@
   <bean name="/buscarPersona.do" class="pe.edu.upc.dsd.controller.BusquedaPersonaController" >
     <property name="service" ref="service" />
   </bean>
-    
+
+
+  
   <!--  
   
   

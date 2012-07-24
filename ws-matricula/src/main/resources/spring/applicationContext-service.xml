@@ -6,7 +6,7 @@
 		http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
   <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-    <property name="prefix" value="/WEB-INF/jsp/html/" />
+    <property name="prefix" value="" />
     <property name="suffix" value=".jsp" />
   </bean>
 
@@ -14,7 +14,7 @@
   <jaxws:client id="personaService" 
           serviceName="PersonaServiceImpl"
           serviceClass="pe.edu.upc.dsd.service.ws.PersonaService"
-          address="http://localhost:8081/ws-reniec/PersonaService"/>
+          address="http://localhost:8080/ws-reniec/PersonaService"/>
           
  <bean id="service" class="pe.edu.upc.dsd.service.impl.ServiceImpl" >
     <property name="personaService" ref="personaService" />
