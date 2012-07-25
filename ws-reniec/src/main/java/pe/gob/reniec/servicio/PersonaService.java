@@ -13,7 +13,7 @@ import pe.gob.reniec.modelo.Persona;
 
 public interface PersonaService {
 	
-	public Persona consultarPersona(@WebParam(name = "dni") String dni);	
+	public Persona obtenerPersonaDNI(@WebParam(name = "dni") String dni);	
 	
 
 	
