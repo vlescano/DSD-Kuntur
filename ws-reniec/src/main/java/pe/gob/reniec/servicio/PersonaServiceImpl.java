@@ -30,7 +30,7 @@ public class PersonaServiceImpl implements PersonaService {
 	List<Persona> personasPrueba = new ArrayList<Persona>();
 			
 	        Persona persona1 = new Persona();
-	        persona1.setDni("25839646");
+	        persona1.setDni("25000000");
 	        persona1.setNombres("Jorge");
 	        persona1.setApellidoPaterno("Romero");
 	        persona1.setApellidoMaterno("Pizarro");

@@ -6,7 +6,7 @@
 		http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
   <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-    <property name="prefix" value="/WEB-INF/jsp/html/" />
+    <property name="prefix" value="" />
     <property name="suffix" value=".jsp" />
   </bean>
 

@@ -25,9 +25,9 @@ public class BusquedaPersonaController extends AbstractController
 {
 	private static final Logger logger = Logger.getLogger(BusquedaPersonaController.class);
 	
-	private static final String VISTA_BUSQUEDA_PRODUCTOS = "ConsultaPersona";
+	private static final String VISTA_BUSQUEDA_DNI = "mk-dni";
 	private static final String PARAMETRO_ACCION = "accion";
-	private static final String PARAMETRO_CODIGO = "txtDNI";
+	private static final String PARAMETRO_DNI = "txtDNI";
 	
 	private static final String ACCION_BUSCAR = "buscar";
 	
@@ -43,20 +43,20 @@ public class BusquedaPersonaController extends AbstractController
 			logger.debug("Obtenemos el criterio de busqueda...");
 			
 			
-			String dni = request.getParameter(PARAMETRO_CODIGO);
+			String dni = request.getParameter(PARAMETRO_DNI);
 			
 			logger.debug("Se realizara la busqueda con los siguientes parametros: codigo='" + dni + "'");
 			
 			Persona persona = buscarPersona(dni);
 			setAttributeToModel(request, "persona", persona);
 			
-			//logger.debug("Veamos que trae='" + persona.getDni() + "'");
+			logger.debug("Retorna DNI?='" + persona.getDni() + "'");
 			
-			return new ModelAndView(VISTA_BUSQUEDA_PRODUCTOS, getModel(request));
+			return new ModelAndView(VISTA_BUSQUEDA_DNI, getModel(request));
 		}
 		
 		
-		return new ModelAndView(VISTA_BUSQUEDA_PRODUCTOS);
+		return new ModelAndView(VISTA_BUSQUEDA_DNI);
 		
 		
 	}

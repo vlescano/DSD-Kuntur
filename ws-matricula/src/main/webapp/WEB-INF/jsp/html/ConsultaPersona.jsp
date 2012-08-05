@@ -28,7 +28,16 @@
 
 
 
-<body>
+<body bgcolor= "#FFFFFF">
+
+
+<font face="verdana"><h5><b>Matrícula - Proceso de Matrícula</b></h5></font>
+
+<b><h4>ROZAS VARGAS, Jorge Daniel</h4></b>
+
+<b><h5>DOCUMENTO DE IDENTIDAD DEL ESTUDIANTE</h5></b>
+
+<br><small>Ingrese el tipo y número de documento de identidad del estudiante.</br></small>
 
 
 <form name="formularioPersona" method="get" action="<%=request.getContextPath()%>/buscarPersona.do">
@@ -36,9 +45,11 @@
 <input type="hidden" name="accion" value=""/>
 <table>
 <tr><td>Ingresar DNI</td><td><input type="text" name="txtDNI" /></td><td><input type="submit" name="btnConsultar" value="Validar DNI" onclick="javascript:buscar();"  /></td></tr>
-<td>
-<!-- <a href="<%=request.getContextPath() %>/buscarPersona.do"><span class="">Consulta DNI</span></a> -->
-</td>
+<tr>
+	<td>
+		<!-- <a href="<%=request.getContextPath() %>/buscarPersona.do"><span class="">Consulta DNI</span></a> -->
+	</td>
+</tr>
 </table>
 <table border="1">
  <tr><td>Datos Reniec</td></tr>
@@ -50,8 +61,21 @@
                     <tr> <td>Fecha de Nacimiento</td><td >${model.persona.fechaNacimiento}</td>    </tr>  
                               	
  </table>
-
-
+ <br/>
+<table border="1" WIDTH=35% height=5% align="left" > 
+		
+		<tr>	<th align="center"><td><small><font face="verdana"><form><input type="submit" value="Aceptar"></form></font></small></td></th>
+			<th align="left"><small><font face="verdana">El tipo y número de documento es correcto</font></small></th>
+		</tr>
+		
+		<tr>	<th align="center"><td><small><font face="verdana"><form><input type="submit" value="Cambiar"></form></font></small></td></th>
+			<th align="left"><small><font face="verdana">Grabar el tipo y número de documento ingresado</font></small></th>
+		</tr>
+</table>
+		
 </form>
+
+
+
 </body>
 </html>
