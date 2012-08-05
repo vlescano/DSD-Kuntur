@@ -21,10 +21,14 @@
 		
 	}
 	
+	function grabarDNI()
+	{
+
+		document.formularioPersona.action.value = 'mk-registra-sit-esp.jsp';
+		document.formularioPersona.submit();
+	}
+	
 </script>
-
-
-
 
 
 
@@ -65,8 +69,9 @@
 int s=0;    
 if (request.getParameter("s") != null) {
        s = Integer.parseInt(request.getParameter("s"));
-       out.println("Please enter your name."+s);
-     
+        
+       //out.println("Please enter your name."+s);
+            
 }else{
 	 
 }
@@ -108,11 +113,14 @@ ${childrenParents[Integer.parseInt(request.getParameter("s"))].nombre}
 <br></br>
 
 <table border="1" WIDTH=35% height=5% align="center" > 
-		<tr><td><input type="submit" value="Grabar DNI"></td>
+		<!-- 
+		<tr><td><input type="submit" value="Grabar DNI" onclick="javascript:grabarDNI();"/></td>
+		-->
 		<td><font face="verdana"><small>Si el número del documento ingresado es correcto presione "Grabar DNI" para continuar</small></font></td>
+		<A href="mk-registra-sit-esp.jsp"><img src="images/continuar.png" width="98" height="34" align="right"></A>
 		</tr>
+				
 </table>
-	
 
 </div>
 
