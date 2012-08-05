@@ -50,7 +50,7 @@ public class BusquedaPersonaController extends AbstractController
 			Persona persona = buscarPersona(dni);
 			setAttributeToModel(request, "persona", persona);
 			
-			logger.debug("Retorna DNI?='" + persona.getDni() + "'");
+			//logger.debug("Retorna DNI?='" + persona.getDni() + "'");
 			
 			return new ModelAndView(VISTA_BUSQUEDA_DNI, getModel(request));
 		}

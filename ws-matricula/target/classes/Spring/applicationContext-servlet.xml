@@ -9,6 +9,9 @@
     <property name="service" ref="service" />
   </bean>
 
+  <bean name="/validarUsuario.do" class="pe.edu.upc.dsd.controller.LoginController" >
+    <property name="service" ref="service" />
+  </bean>
 
   
   <!--  

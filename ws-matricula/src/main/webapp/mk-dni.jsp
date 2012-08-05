@@ -61,7 +61,24 @@
 
 <div align="center">
 <b><h4>ROZAS VARGAS, Jorge Daniel</h4></b>
+<%
+int s=0;    
+if (request.getParameter("s") != null) {
+       s = Integer.parseInt(request.getParameter("s"));
+       out.println("Please enter your name."+s);
+     
+}else{
+	 
+}
 
+
+
+%>
+
+
+<!---
+${childrenParents[Integer.parseInt(request.getParameter("s"))].nombre}
+ --->
 
 <b><h5>DOCUMENTO DE IDENTIDAD DEL ESTUDIANTE</h5></b>
 
@@ -86,9 +103,7 @@
 </table>
 <br></br>
 
-<c:if test="${model.persona.dni}==null">
- <c:out value="El documento ingresado no existe<br /><br />" escapeXml="false" />
-</c:if>
+
 
 <br></br>
 
